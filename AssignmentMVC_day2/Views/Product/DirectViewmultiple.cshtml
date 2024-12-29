@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "DirectViewmultiple";
+}
+
+<h1>DirectViewmultiple</h1>
+
+
+<b> Product List </b>
+
+@{
+    if(Model is List<Product>);
+    {
+foreach (var Product in Model)
+
+    {
+        @Product.Pcode
+        @Product.Name
+        @Product.Qtyinstock
+        @Product.Details
+        @Product.Price
+        <br />
+    }
+    }
+}

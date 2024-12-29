@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Mproduct2";
+}
+
+<h1>Mproduct2</h1>
+
+<b> Product List </b>
+
+   @{
+       foreach(var Product in ViewBag.Products)
+
+    {
+         @Product.Pcode
+         @Product.Name
+         @Product.Qtyinstock
+        @Product.Details
+        @Product.Price<br/>
+    }
+
+   }
+ 
